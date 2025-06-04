@@ -8,7 +8,7 @@ import Subcription from "./components/sections/subscription/Subcription";
 
 export default function Home() {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Hero />
       <Clients />
       <Services />

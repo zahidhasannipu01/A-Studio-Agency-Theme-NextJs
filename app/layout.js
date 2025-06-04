@@ -3,6 +3,7 @@ import "./globals.css";
 import localFont from "next/font/local";
 import Header from "./components/headers/Header";
 import Footer from "./components/footers/Footer";
+import MobileHeader from "./components/headers/MobileHeader";
 
 export const metadata = {
   title: "A+ Studio Theme by Md Zahid Hasan Nipu | Designed by Avi Yansah",
@@ -16,8 +17,12 @@ const myFonts = localFont({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
       <body className={` ${myFonts.className} overflow-x-hidden`}>
         <Header />
+        <MobileHeader />
         {children}
         <Footer />
       </body>
