@@ -6,7 +6,7 @@ import Link from "next/link";
 const Header = () => {
   return (
     <Container>
-      <div className="flex justify-between py-10">
+      <div className="flex justify-between py-10 hidden md:flex">
         <div>
           <Link href="/">
             <Image src={logo} alt="logo" />

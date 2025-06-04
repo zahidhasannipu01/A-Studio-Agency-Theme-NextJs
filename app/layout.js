@@ -3,6 +3,7 @@ import "./globals.css";
 import localFont from "next/font/local";
 import Header from "./components/headers/Header";
 import Footer from "./components/footers/Footer";
+import MobileHeader from "./components/headers/MobileHeader";
 
 export const metadata = {
   title: "A+ Studio Theme by Md Zahid Hasan Nipu | Designed by Avi Yansah",
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={` ${myFonts.className} overflow-x-hidden`}>
         <Header />
+        <MobileHeader />
         {children}
         <Footer />
       </body>

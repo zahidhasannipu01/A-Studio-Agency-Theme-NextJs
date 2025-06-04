@@ -12,9 +12,9 @@ import box from "../../../../public/assets/bubbles/bubble2.svg";
 const Services = () => {
   return (
     <Container>
-      <div className="mt-32 w-full h-[788px]  flex justify-between items-center relative mb-30">
-        <div className="">
-          <div>
+      <div className="mt-10 md:mt-32 w-[360px] h-auto md:w-full md:h-[788px]  flex justify-center md:justify-between items-center relative mb-30">
+        <div className="hidden md:block">
+          <div className="hidden md:block">
             <Image
               src={box}
               alt="box"
@@ -38,9 +38,9 @@ const Services = () => {
             />
           </div>
         </div>
-        <div>
+        <div className="flex md:block justify-center items-center ">
           <div className="relative">
-            <div className="grid grid-cols-2 gap-x-5 pb-5 ">
+            <div className="grid grid-row-2 md:grid-flow-col md:grid-cols-2 gap-y-5 md:gap-x-5 pb-5">
               <div className="w-[308px] h-[379px] bg-white shadow-md rounded-2xl flex flex-col p-4  items-center space-y-10 justify-center scale-100 hover:scale-105 duration-300 cursor-pointer">
                 <div className="px-4 py-3 bg-[#F1F7FF] rounded-xl">
                   <Image src={searchbox} alt="searchbox" />
@@ -57,7 +57,7 @@ const Services = () => {
                   </p>
                 </div>
               </div>
-              <div className="w-[308px] h-[379px] bg-white shadow-md rounded-2xl flex flex-col absolute right-0 -top-10 z-10  p-4  items-center space-y-10 justify-center scale-100 hover:scale-105 duration-300 cursor-pointer">
+              <div className="w-[308px] h-[379px] bg-white shadow-md rounded-2xl flex flex-col  md:absolute right-0 top-0 md:-top-10 z-10  p-4  items-center space-y-10 justify-center scale-100 hover:scale-105 duration-300 cursor-pointer">
                 {" "}
                 <div className="px-4 py-3 bg-[#FFF7E3] rounded-xl">
                   <Image src={wallet} alt="searchbox" />
@@ -74,7 +74,7 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-x-5 ">
+            <div className="grid grid-row-2 md:grid-flow-col md:grid-cols-2 gap-y-5 md:gap-x-5">
               <div className="w-[308px] h-[379px] bg-white shadow-md rounded-2xl flex flex-col p-4  items-center space-y-10 justify-center scale-100 hover:scale-105 duration-300 cursor-pointer">
                 {" "}
                 <div className="px-4 py-3 bg-[#FFF2F8] rounded-xl">
@@ -91,7 +91,7 @@ const Services = () => {
                   </p>
                 </div>
               </div>
-              <div className="w-[308px] h-[379px] bg-white shadow-md rounded-2xl flex flex-col absolute bottom-10 right-0 p-4  items-center space-y-10 justify-center scale-100 hover:scale-105 duration-300 cursor-pointer">
+              <div className="w-[308px] h-[379px] bg-white shadow-md rounded-2xl flex flex-col block md:absolute bottom-10 right-0 p-4  items-center space-y-10 justify-center scale-100 hover:scale-105 duration-300 cursor-pointer">
                 {" "}
                 <div className="px-4 py-3 bg-[#DEFFEE] rounded-xl">
                   <Image src={chart} alt="searchbox" />
@@ -109,10 +109,10 @@ const Services = () => {
               </div>
             </div>
           </div>
-          <div className="absolute -right-[15%] top-26 -z-5">
+          <div className="absolute -right-[15%] top-26 -z-5 hidden md:block">
             <Image src={rectablebox} alt="rectablebox" />
           </div>
-          <div>
+          <div className="hidden md:block">
             <Image
               src={circle}
               alt="circle"

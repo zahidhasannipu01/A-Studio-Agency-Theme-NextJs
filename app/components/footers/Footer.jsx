@@ -9,12 +9,12 @@ import LinkedIn from "../../../public/assets/icon/linkedin.svg";
 const Footer = () => {
   return (
     <Container>
-      <div className="flex justify-between py-5">
+      <div className="flex md:flex-row flex-col justify-between py-5 w-full h-auto">
         <div className="flex flex-col gap-y-5">
           <div>
             <Image src={Logo} alt="logo" />
           </div>
-          <div className="text-[#6B7280] text-sm text-wrap w-[400px] leading-5">
+          <div className="text-[#6B7280] text-sm text-wrap w-full md:w-[400px] leading-5">
             <p>
               Leading digital agency with solid design and development
               expertise. We build readymade websites, mobile applications, and
@@ -28,7 +28,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="">
-          <div className="grid grid-cols-4 gap-x-32 ">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-20 gap-y-5 md:grid-y-0 md:gap-x-32 mt-6 md:mt-0">
             <div>
               <p className="text-xl font-bold">What We Do</p>
               <div className="gap-y-2 flex flex-col pt-4 text-sm">

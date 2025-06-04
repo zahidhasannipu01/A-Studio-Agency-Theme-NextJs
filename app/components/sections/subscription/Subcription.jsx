@@ -5,7 +5,7 @@ const Subcription = () => {
   return (
     <Container>
       <div>
-        <div className="p-10 bg-[#F4F9FF] rounded-2xl h-[290px] w-full flex items-center justify-between relative mb-30">
+        <div className="p-10 bg-[#F4F9FF] rounded-2xl h-[290px] w-full flex items-center justify-between relative mb-30 hidden md:block">
           <div>
             <p className="text-4xl font-bold">Subscribe Newsletter </p>
             <p className="text-[#6B7280] text-base mt-4">

@@ -16,7 +16,7 @@ import dott2 from "../../../../public/assets/bubbles/dot2.svg";
 const Testimonial = () => {
   return (
     <Container>
-      <div className="mb-30">
+      <div className="mb-10 md:mb-30">
         <div className="text-center py-20">
           <p className="text-4xl font-extrabold">What our happy client say</p>
           <p className="text-[#6B7280] text-base mt-4">
@@ -24,13 +24,13 @@ const Testimonial = () => {
           </p>
         </div>
         <div className="flex justify-between items-center relative">
-          <div className="absolute left-[13%] top-0 -z-10">
+          <div className="absolute left-[13%] top-0 -z-10 hidden md:block">
             <Image src={dott2} alt="group" />
           </div>
-          <div className="absolute left-[3%] top-[60%] -z-10">
+          <div className="absolute left-[3%] top-[60%] -z-10 hidden md:block">
             <Image src={circle} alt="circle" />
           </div>
-          <div className="w-3/5">
+          <div className="w-full md:w-3/5">
             <Swiper
               pagination={true}
               modules={[Pagination]}
@@ -39,7 +39,7 @@ const Testimonial = () => {
               {testimonialData.map((item, index) => (
                 <SwiperSlide key={index} className="w-full">
                   <div className="flex justify-center gap-6 items-center w-full h-full">
-                    <div className="w-[389px] h-[389px]">
+                    <div className="w-[250px] h-[250px] md:w-[389px] md:h-[389px]">
                       <Image
                         src={item.image}
                         alt={item.name}
@@ -57,7 +57,7 @@ const Testimonial = () => {
               ))}
             </Swiper>
           </div>
-          <div className="relative ">
+          <div className="relative hidden md:block">
             <div className="absolute left-10 top-20 -z-10 w-[184px] h-[184px]">
               <Image className="w-full h-full" src={circle2} alt="circle" />
             </div>
